@@ -5,7 +5,7 @@ function Experience ({ experience }) {
   const { startLocaleDate, endLocaleDate, amountMonths } = useDiffDates(experience.start, experience.end)
   return experience
     ? (
-      <div className='flex flex-col my-3 w-full mx-auto px-6 container lg:max-w-4xl md:max-w-2xl lg:gap-y-5 justify-center items-left '>
+      <article className='flex flex-col my-3 w-full mx-auto px-6 container lg:max-w-4xl md:max-w-2xl lg:gap-y-5 justify-center items-left '>
         <div className='flex items-center gap-2 text-2xl lg:text-4xl'>
           <Suitcase className='w-10 h-10' />
           <h2 className='font-bold'>{experience.title}</h2>
@@ -23,7 +23,7 @@ function Experience ({ experience }) {
           </div>
           <p className='font-normal text-lg lg:text-xl'>{experience.description}</p>
         </div>
-      </div>
+      </article>
       )
     : (
       <div className='flex flex-col w-full mx-auto container lg:max-w-4xl md:max-w-2xl justify-center items-center'>

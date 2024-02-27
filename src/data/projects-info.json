@@ -4,8 +4,8 @@
         "name": "CESP",
         "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.\nNo existe un despliegue de este proyecto, ya que es algo interno dentro de la universidad. Para desplegar el proyecto en pruebas se usó Azure",
         "repoUrl": "https://github.com/Andresssg/Tesis",
-        "liveUrl": "",
-        "image": "",
+        "demoUrl": "",
+        "image": "/src/assets/cesp.png",
         "techStack": [
             "django",
             "react",
@@ -18,8 +18,8 @@
         "name": "Project2",
         "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
-        "liveUrl": "",
-        "image": "",
+        "demoUrl": "",
+        "image": "/src/assets/cesp.png",
         "techStack": [
             "react",
             "node",
@@ -31,8 +31,8 @@
         "name": "Project3",
         "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
-        "liveUrl": "",
-        "image": "",
+        "demoUrl": "",
+        "image": "/src/assets/cesp.png",
         "techStack": [
             "react",
             "node",
@@ -44,8 +44,8 @@
         "name": "Project4",
         "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
-        "liveUrl": "",
-        "image": "",
+        "demoUrl": "",
+        "image": "/src/assets/cesp.png",
         "techStack": [
             "react",
             "node",

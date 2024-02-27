@@ -1,12 +1,11 @@
 import Experience from '../components/Experience'
-import useFetchInfo from '../hooks/useFetchInfo'
+import data from '../data/background-info.json'
 
 function Background () {
-  const { info } = useFetchInfo('../../background-info.json')
   return (
     <section id='background' className='flex flex-col w-full my-5 lg:my-16 mx-auto container lg:max-w-4xl md:max-w-2xl justify-center items-center text-secondary-light'>
       <h1 className='py-5 font-bold text-4xl lg:text-5xl'>Experiencia Profesional</h1>
-      {info.sort((a, b) => b.id - a.id).map(item => (
+      {data.sort((a, b) => b.id - a.id).map(item => (
         <Experience key={`b-${item.id}`} experience={item} />
       ))}
     </section>
