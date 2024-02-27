@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "company": "Freelance",
+        "title": "Desarrollador freelance",
+        "description": "Desarrollo de una aplicación web para realizar cotizaciones y mejorar el servicio al cliente. Consumo de diferentes servicios de un CRM para consultar y guardar información de los clientes. Se usaron tecnologías como NodeJS, React, entre otras. También se crearon diversas APIs para la comunicación con el CRM y la aplicación web.",
+        "location": "Bogotá",
+        "start": "2023/01/01",
+        "end": "2023/05/29"
+    },
+    {
+        "id": 2,
+        "company": "Unidad de Restitución de Tierras",
+        "title": "Practicante desarrollo de software",
+        "location": "Bogotá",
+        "description": "Desarrollo de componentes de software bajo estándares de la entidad. Contribución al crecimiento de las aplicaciones internas usadas por los empleados desarrollando diversas funcionalidades en algunas de las aplicaciones logrando su mantenimiento y actualización. Participación en el ciclo de desarrollo, mediante SCRUM. Se usaron tecnologías como Java, Spring Boot, Angular, entre otras.",
+        "start": "2023/08/01",
+        "end": "2023/12/29"
+    }
+]
