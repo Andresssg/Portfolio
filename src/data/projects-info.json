@@ -2,10 +2,10 @@
     {
         "id": 1,
         "name": "CESP",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.\nNo existe un despliegue de este proyecto, ya que es algo interno dentro de la universidad. Para desplegar el proyecto en pruebas se usó Azure",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA. Esta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.",
         "repoUrl": "https://github.com/Andresssg/Tesis",
         "demoUrl": "",
-        "image": "/src/assets/cesp.png",
+        "image": "/src/assets/cesp.webp",
         "techStack": [
             "django",
             "react",
@@ -16,7 +16,7 @@
     }, {
         "id": 2,
         "name": "Project2",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
         "demoUrl": "",
         "image": "/src/assets/cesp.png",
@@ -29,7 +29,7 @@
     }, {
         "id": 3,
         "name": "Project3",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
         "demoUrl": "",
         "image": "/src/assets/cesp.png",
@@ -42,7 +42,7 @@
     }, {
         "id": 4,
         "name": "Project4",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá.\nEsta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
         "repoUrl": "",
         "demoUrl": "",
         "image": "/src/assets/cesp.png",

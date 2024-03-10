@@ -1,11 +1,11 @@
-import Project from '../components/Project'
+import Project from '../components/ProjectCard'
 import data from '../data/projects-info.json'
 
 function Projects () {
   return (
-    <section id='projects' className='bg-secondary-light text-primary-light'>
-      <div className='flex flex-col w-full my-5 lg:my-16 mx-auto container lg:max-w-4xl md:max-w-2xl justify-center items-center'>
-        <h1 className='py-5 font-bold text-4xl lg:text-5xl'>Proyectos</h1>
+    <section id='projects' className='flex flex-col w-full px-8 py-10 bg-secondary-light text-primary-light gap-y-10 md:px-2'>
+      <h1 className='font-bold text-4xl md:text-5xl text-center'>Proyectos</h1>
+      <div className='flex flex-wrap w-full justify-evenly xl:justify-between gap-y-8'>
         {data.map(project => {
           return (
             <Project key={`p-${project.id}`} info={project} />
