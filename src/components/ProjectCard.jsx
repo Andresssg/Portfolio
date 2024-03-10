@@ -1,4 +1,4 @@
-import Arrow from '../icons/Arrow'
+import LinkButton from './LinkButton'
 import TechPill from './TechPill'
 
 function Project ({ info }) {
@@ -26,30 +26,8 @@ function Project ({ info }) {
         <p>{description}</p>
       </main>
       <footer className='flex w-full justify-evenly mb-2 mt-auto items-center text-center'>
-        {
-        repoUrl
-          ? (
-            <a
-              href={repoUrl} target='_blank' rel='noreferrer'
-              className='flex items-center md:gap-x-2 w-auto p-2 font-bold bg-primary-light text-secondary-light
-            hover:bg-primary hover:text-primary-light duration-300'
-            >Visitar repositorio <Arrow styles='w-4 h-4' />
-            </a>
-            )
-          : <p className='w-auto p-2 text-primary-light italic'>Repositorio no disponible</p>
-        }
-        {
-          demoUrl
-            ? (
-              <a
-                href={demoUrl} target='_blank' rel='noreferrer'
-                className='w-auto p-2 bg-primary-light text-secondary-light
-              hover:bg-slate-700 hover:text-primary-light duration-300'
-              >Demo
-              </a>
-              )
-            : <p className='w-auto p-2 text-primary-light italic'>Demo no disponible</p>
-        }
+        <LinkButton url={repoUrl} text='Visitar repositorio' showArrow errorText='Repositorio no disponible' />
+        <LinkButton url={demoUrl} text='Ver demo' showArrow errorText='Demo no disponible' />
       </footer>
     </article>
   )
