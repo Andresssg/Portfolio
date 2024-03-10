@@ -1,4 +1,4 @@
-import Project from '../components/ProjectCard'
+import ProjectCard from '../components/ProjectCard'
 import data from '../data/projects-info.json'
 
 function Projects () {
@@ -8,7 +8,7 @@ function Projects () {
       <div className='flex flex-wrap w-full justify-evenly xl:justify-between gap-y-8'>
         {data.map(project => {
           return (
-            <Project key={`p-${project.id}`} info={project} />
+            <ProjectCard key={`p-${project.id}`} info={project} />
           )
         })}
       </div>

@@ -1,7 +1,7 @@
 import LinkButton from './LinkButton'
 import TechPill from './TechPill'
 
-function Project ({ info }) {
+function ProjectCard ({ info }) {
   const { name, description, repoUrl, demoUrl, image, techStack } = info
   return (
     <article className='flex flex-col w-full h-[37rem] border-2 border-primary-light rounded-xl overflow-hidden cursor-pointer
@@ -33,4 +33,4 @@ function Project ({ info }) {
   )
 }
 
-export default Project
+export default ProjectCard
