@@ -4,7 +4,8 @@ import TechPill from './TechPill'
 function ProjectCard ({ info }) {
   const { name, description, repoUrl, demoUrl, image, techStack } = info
   return (
-    <article className='flex flex-col w-full h-[37rem] border-2 border-primary-light rounded-xl overflow-hidden cursor-pointer
+    <article
+      title='Mostrar mas' className='flex flex-col w-full h-[37rem] border-2 border-primary-light rounded-xl overflow-hidden cursor-pointer
     hover:bg-slate-700 md:w-[40ch] lg:w-[50ch]'
     >
       <header className='flex flex-col w-full h-1/2 justify-between'>
