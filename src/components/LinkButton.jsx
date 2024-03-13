@@ -11,7 +11,7 @@ function LinkButton ({ url, text = 'Visitar url', showArrow, errorText = 'Url no
       >{text} {showArrow && <Arrow styles='w-4 h-4' />}
       </a>
       )
-    : <p title={errorText} className='w-auto p-2 text-primary-light italic'>{errorText}</p>
+    : <p title={errorText} className='w-auto p-2 text-secondary-light italic'>{errorText}</p>
   ))
 }
 
