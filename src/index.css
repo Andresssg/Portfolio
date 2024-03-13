@@ -7,3 +7,10 @@
       font-family: "Geologica Variable", system-ui, sans-serif;
     }
   }
+
+.project-card{
+  @apply hover:border-transparent before:hidden hover:before:inline-block 
+  before:absolute before:bg-slate-500 before:w-32 before:h-[170%] 
+  before:left-1/3 hover:before:animate-rotate 
+  after:absolute hover:after:bg-secondary-light after:inset-1 after:rounded-xl;
+}
