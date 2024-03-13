@@ -7,11 +7,19 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        rotate: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' }
+        }
+      },
+      animation: {
+        rotate: 'rotate 3.5s linear infinite'
+      },
+      boxShadow: {
+        custom: '0px 10px 10px -10px rgba(0, 0, 0, 0.17)'
+      },
       colors: {
-        primary: '#061538',
-        secondary: '#34425c',
-        tertiary: '#adb4d1',
-        quaternary: '#3b64c0',
         'primary-light': '#FCFCFC',
         'secondary-light': colors.slate[800],
         github: '#211F1F',
