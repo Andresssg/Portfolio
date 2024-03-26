@@ -1,4 +1,4 @@
-import Nav from './components/Nav'
+import NavBar from './components/NavBar'
 import Hero from './sections/Hero'
 import Background from './sections/Background'
 import Projects from './sections/Projects'
@@ -10,7 +10,7 @@ function App () {
   return (
     <div className='flex flex-col min-h-screen items-center content-center bg-primary'>
       <ModalContextProvider>
-        <Nav />
+        <NavBar />
         <Hero />
         <Background />
         <Projects />
