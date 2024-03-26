@@ -10,7 +10,7 @@ function Projects () {
     setShowModal(true)
   }
   return (
-    <section id='projects' className='flex flex-col w-full px-8 py-10 bg-secondary text-primary gap-y-10 md:px-2'>
+    <section id='projects' className='flex flex-col w-full px-8 py-10 text-accent gap-y-10 md:px-2'>
       <h1 className='font-bold text-4xl md:text-5xl text-center'>Proyectos</h1>
       <div className='flex flex-wrap w-full justify-evenly xl:justify-between gap-y-8'>
         {data.map(project => {
