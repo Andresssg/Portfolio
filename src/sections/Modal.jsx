@@ -33,7 +33,7 @@ function Modal () {
         <div
           className='fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50'
         >
-          <div className='flex flex-col relative w-11/12 max-w-6xl h-5/6 p-8 bg-white rounded-lg overflow-auto text-secondary-light'>
+          <div className='flex flex-col relative w-11/12 max-w-6xl h-5/6 p-8 bg-white rounded-lg overflow-auto text-secondary'>
             <button
               className='absolute top-0 right-0 p-3'
               onClick={() => setShowModal(false)}

@@ -24,8 +24,8 @@ function ProjectCard ({ info, onClick }) {
               Icon &&
                 <span
                   key={`pc-${tech}`}
-                  title={tech} className='-mr-5 p-1.5 bg-secondary-light rounded-full border-2 border-slate-500
-                  hover:scale-110 hover:mr-0 hover:shadow-custom hover:shadow-primary-light duration-200'
+                  title={tech} className='-mr-5 p-1.5 bg-secondary rounded-full border-2 border-slate-500
+                  hover:scale-110 hover:mr-0 hover:shadow-custom hover:shadow-primary duration-200'
                 >
                   <Icon
                     className='w-6 h-6'

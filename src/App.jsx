@@ -8,7 +8,7 @@ import ModalContextProvider from './contexts/ModalContext'
 
 function App () {
   return (
-    <div className='flex flex-col min-h-screen items-center content-center bg-primary-light'>
+    <div className='flex flex-col min-h-screen items-center content-center bg-primary'>
       <ModalContextProvider>
         <Nav />
         <Hero />

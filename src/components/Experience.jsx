@@ -10,10 +10,10 @@ function Experience ({ experience }) {
           <Suitcase className='w-10 h-10' />
           <h2 className='font-bold'>{experience.title}</h2>
         </div>
-        <div className='mt-2 ml-5 py-2 px-6 font-semibold text-xl lg:text-2xl border-secondary-light border-l-4'>
+        <div className='mt-2 ml-5 py-2 px-6 font-semibold text-xl lg:text-2xl border-secondary border-l-4'>
           <p className=''>{experience.company}</p>
           <div className='flex capitalize'>
-            <div className='flex gap-x-2 pr-3 items-center border-r-2 border-secondary-light'>
+            <div className='flex gap-x-2 pr-3 items-center border-r-2 border-secondary'>
               <p>{startLocaleDate}</p>
               <p>·</p>
               <p>{endLocaleDate}
