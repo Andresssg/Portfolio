@@ -4,8 +4,8 @@ function ProjectCard ({ info, onClick }) {
   const { name, shortDescription, mainImage, techStack } = info
   return (
     <article
-      title='Mostrar mas' className='project-card flex flex-col relative gap-y-2 p-4 w-full justify-center rounded-xl
-      overflow-hidden cursor-pointer md:w-[40ch] lg:w-[50ch] shadow-lg border-4 border-slate-700 group'
+      title={`${name}`} className='project-card flex flex-col relative gap-y-2 p-4 w-full justify-center rounded-xl
+      overflow-hidden cursor-pointer md:w-[40ch] lg:w-[50ch] shadow-lg border-4 border-secondary group'
       onClick={onClick}
     >
       <header className='flex flex-col w-full justify-between gap-y-2 z-10'>
@@ -24,8 +24,8 @@ function ProjectCard ({ info, onClick }) {
               Icon &&
                 <span
                   key={`pc-${tech}`}
-                  title={tech} className='-mr-5 p-1.5 bg-primary rounded-full border-2 border-slate-500
-                  hover:scale-110 hover:mr-0 hover:shadow-custom hover:shadow-primary duration-200 group-hover:bg-secondary'
+                  title={tech} className='-mr-5 p-1.5 bg-primary rounded-full border-2 border-secondary
+                  hover:scale-110 hover:mr-0 hover:shadow-custom duration-200 group-hover:bg-secondary group-hover:border-accent'
                 >
                   <Icon
                     className='w-6 h-6'
