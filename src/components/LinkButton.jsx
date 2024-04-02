@@ -6,12 +6,12 @@ function LinkButton ({ url, text = 'Visitar url', showArrow, errorText = 'Url no
       <a
         href={url} target='_blank' rel='noreferrer'
         title={text}
-        className='flex items-center md:gap-x-2 w-auto p-2 font-bold bg-primary text-secondary
-        hover:bg-primary hover:text-primary duration-300'
+        className='flex justify-center items-center md:gap-x-2 w-1/2 p-2 font-bold bg-accent text-primary
+        duration-300'
       >{text} {showArrow && <Arrow styles='w-4 h-4' />}
       </a>
       )
-    : <p title={errorText} className='w-auto p-2 text-secondary italic'>{errorText}</p>
+    : <p title={errorText} className='text-center w-auto p-2 text-accent italic'>{errorText}</p>
   ))
 }
 
