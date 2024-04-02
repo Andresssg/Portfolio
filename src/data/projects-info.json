@@ -15,45 +15,5 @@
             "nginx",
             "docker"
         ]
-    }, {
-        "id": 2,
-        "name": "Project2",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "urls":{},
-        "mainImage": "/src/assets/cesp.png",
-        "images": ["/src/assets/cesp.png"],
-        "techStack": [
-            "react",
-            "node",
-            "express",
-            "mongo"
-        ]
-    }, {
-        "id": 3,
-        "name": "Project3",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "urls":{},
-        "mainImage": "/src/assets/cesp.png",
-        "images": ["/src/assets/cesp.png"],
-        "techStack": [
-            "react",
-            "node",
-            "express",
-            "mongo"
-        ]
-    }, {
-        "id": 4,
-        "name": "Project4",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "urls":{},
-        "mainImage": "/src/assets/cesp.png",
-        "images": ["/src/assets/cesp.png"],
-        "techStack": [
-            "react",
-            "node",
-            "express",
-            "mongo"
-        ]
     }
-
 ]
