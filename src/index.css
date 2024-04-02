@@ -17,5 +17,5 @@
 
 .typewriter{
   @apply relative w-[max-content] text-6xl before:absolute before:inset-0 before:animate-typewriter 
-  before:bg-primary after:absolute after:inset-0 after:w-[0.05em] after:animate-caret after:bg-accent;
+  before:bg-primary after:absolute after:inset-0 after:w-[0.05em] after:animate-caret after:bg-light-gray;
 }

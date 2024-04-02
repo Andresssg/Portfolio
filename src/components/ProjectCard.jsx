@@ -41,7 +41,7 @@ function ProjectCard ({ info }) {
                   <span
                     key={`pc-${tech}`}
                     title={tech} className='-mr-5 p-1.5 bg-primary rounded-full border-2 border-secondary
-                  hover:scale-110 hover:mr-0 hover:shadow-custom duration-200 group-hover:bg-secondary group-hover:border-accent'
+                  hover:scale-110 hover:mr-0 hover:shadow-custom duration-200 group-hover:bg-secondary group-hover:border-light-gray'
                   >
                     <Icon
                       className='w-6 h-6'

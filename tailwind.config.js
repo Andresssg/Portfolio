@@ -41,7 +41,8 @@ export default {
       colors: {
         primary: '#1e1f26',
         secondary: '#353643',
-        accent: '#e2e2e2',
+        'light-gray': '#e2e2e2',
+        accent: '#22d3ee',
         github: '#211F1F',
         linkedin: '#0077B5'
       },
