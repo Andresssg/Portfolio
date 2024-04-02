@@ -2,10 +2,10 @@
     {
         "id": 1,
         "name": "CESP",
-        "shortDescription": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA. Esta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.",
-        "description": "\nLorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga dolore voluptatem deleniti? Neque, blanditiis. Harum consequatur est enim, quae ad commodi modi iure, sapiente nihil accusantium esse hic ipsum vel!\nIncidunt nobis eum, tempora qui ipsam dolore fugiat! Atque, minus soluta officia at harum sunt magnam, alias est earum amet distinctio inventore dolore deleniti, porro dolorem cum aperiam ipsum hic.\nPossimus excepturi dolorem minus, laboriosam quibusdam esse commodi accusamus magnam amet incidunt explicabo molestias expedita aut dolor deleniti quae ullam fugiat soluta. Voluptatem soluta aspernatur perferendis quos, praesentium consequuntur eveniet!\nInventore, repellendus maxime! Ipsam iste laboriosam consequatur accusamus repellat rem eum fuga sequi magnam rerum praesentium tempore nam sit quibusdam, nulla quam, obcaecati quidem exercitationem ducimus provident hic iusto repudiandae.\nPraesentium molestiae corporis quam corrupti esse debitis vitae dignissimos quae nisi! Ea possimus dolores debitis eaque! Ullam voluptate, totam ab eum maiores aperiam excepturi quaerat. Blanditiis obcaecati officia non esse!\nIpsa, omnis accusantium. Illum, sapiente! Officiis voluptas minus debitis saepe. Sed veritatis nam, repudiandae cumque repellendus nihil accusamus hic quos dolorum enim perspiciatis corporis illum rerum autem ad sint omnis?\nIpsam fugit vitae, saepe odio similique excepturi! Quia eaque mollitia dignissimos fugit exercitationem natus ab ad molestiae temporibus, vero nisi reiciendis adipisci voluptate aperiam iure tenetur blanditiis consequatur eveniet omnis.\nAdipisci expedita libero iure voluptate reprehenderit magni alias, maiores, cupiditate hic necessitatibus totam illo consequuntur, delectus excepturi molestiae consequatur iusto atque repellendus perspiciatis omnis. Dignissimos eveniet facere rerum nesciunt nisi.\nDicta commodi dolorum ad numquam rerum in id, architecto dolor blanditiis? Expedita eum voluptas sint, deserunt nostrum culpa suscipit! Sed veritatis reprehenderit exercitationem modi, laborum rem aspernatur fugit ab iste?\nQuae aspernatur atque eaque aliquid accusamus! Harum quisquam, facilis nemo eius dolorem et quos dignissimos eligendi est aliquid ab doloribus nam libero sit officia corporis, atque esse perspiciatis animi blanditiis.",
-        "repoUrl": "https://github.com/Andresssg/Tesis",
-        "demoUrl": "",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA. Esta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.",
+        "urls": {
+            "repoUrl": "https://github.com/Andresssg/Tesis"
+        },
         "mainImage": "/src/assets/cesp.webp",
         "images": ["/src/assets/cesp.webp"],
         "techStack": [
@@ -18,10 +18,8 @@
     }, {
         "id": 2,
         "name": "Project2",
-        "shortDescription": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "description": "",
-        "repoUrl": "",
-        "demoUrl": "",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "urls":{},
         "mainImage": "/src/assets/cesp.png",
         "images": ["/src/assets/cesp.png"],
         "techStack": [
@@ -33,10 +31,8 @@
     }, {
         "id": 3,
         "name": "Project3",
-        "shortDescription": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "description": "",
-        "repoUrl": "",
-        "demoUrl": "",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "urls":{},
         "mainImage": "/src/assets/cesp.png",
         "images": ["/src/assets/cesp.png"],
         "techStack": [
@@ -48,10 +44,8 @@
     }, {
         "id": 4,
         "name": "Project4",
-        "shortDescription": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
-        "description": "",
-        "repoUrl": "",
-        "demoUrl": "",
+        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá. Esta aplicación fue desarrollada como proyecto de grado para optar por el titulo de Ingeniero de Sistemas.",
+        "urls":{},
         "mainImage": "/src/assets/cesp.png",
         "images": ["/src/assets/cesp.png"],
         "techStack": [
