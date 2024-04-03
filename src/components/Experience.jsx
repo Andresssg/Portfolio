@@ -1,32 +1,42 @@
 import useDiffDates from '../hooks/useDiffDates'
-import Suitcase from '../icons/Suitcase'
 import Keywords from './Keywords'
 
-function Experience ({ experience }) {
+function Experience ({ experience, position = 'left' }) {
   const { title, company, description, start, end } = experience
   const { startLocaleDate, endLocaleDate, amountMonths } = useDiffDates(start, end)
+  const stylesLeft = 'self-start md:text-end after:-right-5 order-1'
+  const stylesRight = 'self-end text-start after:-left-5 md:ml-4 order-2'
 
   return experience
     ? (
-      <article className='flex flex-col my-3 w-full mx-auto px-6 container lg:max-w-4xl md:max-w-2xl lg:gap-y-5 justify-center items-left '>
-        <div className='flex items-center gap-2 text-2xl lg:text-4xl'>
-          <Suitcase className='w-10 h-10' />
-          <h2 className='font-bold'>{title}</h2>
+      <div className='flex w-full font-semibold text-xl lg:text-2xl'>
+        <div className={`hidden md:flex gap-x-2 capitalize my-auto w-1/2 ${position === 'left' ? 'order-2 justify-start px-8' : 'order-1 justify-end px-3.5'}`}>
+          <p>{startLocaleDate}</p>
+          <p className='text-accent'>·</p>
+          <p>{endLocaleDate}</p>
         </div>
-        <div className='mt-2 ml-5 py-2 px-6 font-semibold text-xl lg:text-2xl border-light-gray border-l-4'>
-          <p className=''>{company}</p>
-          <div className='flex capitalize'>
-            <div className='flex gap-x-2 pr-3 items-center border-r-2 border-light-gray'>
+        <article className={`flex flex-col relative py-10 px-5 w-full md:w-1/2
+        md:gap-y-5 justify-center bg-secondary rounded-lg
+        after:absolute ${position === 'left' ? stylesLeft : stylesRight}
+        after:hidden md:after:block after:my-auto after:w-8 after:h-8 after:rounded-full after:border-4 
+        after:border-light-gray after:bg-primary after:z-10
+        before:absolute md:before:hidden before:my-auto before:w-8 before:h-8 before:rounded-full before:border-4 
+        before:border-light-gray before:bg-primary before:z-10 before:-left-3
+      `}
+        >
+          <div className='px-6'>
+            <h2 className='font-bold'>{title}</h2>
+            <p className='text-accent'>{company}</p>
+            <div className='md:hidden flex gap-x-2 capitalize text-lg'>
               <p>{startLocaleDate}</p>
-              <p>·</p>
-              <p>{endLocaleDate}
-              </p>
+              <p className='text-accent'>·</p>
+              <p>{endLocaleDate}</p>
             </div>
-            <p className='px-3'>{amountMonths} meses</p>
+            <p className='text-lg lg:text-xl'>{amountMonths} meses</p>
+            <Keywords description={description} />
           </div>
-          <Keywords description={description} />
-        </div>
-      </article>
+        </article>
+      </div>
       )
     : (
       <div className='flex flex-col w-full mx-auto container lg:max-w-4xl md:max-w-2xl justify-center items-center'>
