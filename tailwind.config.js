@@ -6,10 +6,6 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        rotate: {
-          from: { transform: 'rotate(0deg)' },
-          to: { transform: 'rotate(360deg)' }
-        },
         typewriter: {
           to: {
             left: '100%'
@@ -31,7 +27,6 @@ export default {
         }
       },
       animation: {
-        rotate: 'rotate 3.5s linear infinite',
         typewriter: 'typewriter 2s steps(20) forwards',
         caret: 'typewriter 2s steps(20) forwards, blink 1s steps(11) infinite 2s'
       },
