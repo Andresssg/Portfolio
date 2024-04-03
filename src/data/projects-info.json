@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "CESP",
-        "description": "Ese proyecto es una aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de IA. Esta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.",
+        "description": "Aplicación web para analizar la entrada y salida de personas de los parques de Bogotá haciendo uso de Inteligencia Artificial. Esta aplicación fue desarrollada como proyecto de grado para optar por el título de Ingeniero de Sistemas.",
         "urls": {
             "repoUrl": "https://github.com/Andresssg/Tesis"
         },
