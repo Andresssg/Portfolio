@@ -4,10 +4,10 @@ import data from '../data/background-info.json'
 function Background () {
   return (
     <section
-      id='background' className='flex flex-col px-4 my-5 pt-10 justify-center items-center text-light-gray
-      lg:my-20 lg:max-w-7xl'
+      id='background' className='flex flex-col px-4 my-5 justify-center items-center text-light-gray
+      md:my-16 lg:max-w-7xl'
     >
-      <h1 className='py-5 font-bold text-4xl md:text-5xl text-accent text-center'>Experiencia Profesional</h1>
+      <h1 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Experiencia Profesional</h1>
       <div className='flex flex-col relative px-2 py-10 w-full justify-around gap-y-10 mt-10'>
         {data
           .sort((a, b) => b.id - a.id)
