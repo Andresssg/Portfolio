@@ -1,10 +1,10 @@
-function Keywords ({ description = '' }) {
-  const keywords = ['Java', 'Spring Boot', 'Angular', 'NodeJS', 'React', 'SCRUM', 'APIs']
+import { keywords } from '../hooks/keywords'
+function KeywordsComp ({ className = '', description = '' }) {
   const regex = new RegExp(`(${keywords.join('|')})`, 'gi')
   const descriptionFragments = description.split(regex)
 
   return (
-    <p className='font-normal text-lg lg:text-xl'>
+    <p className={className}>
       {descriptionFragments.map((fragment, index) => {
         const isKeyword = keywords.includes(fragment)
         return (
@@ -17,4 +17,4 @@ function Keywords ({ description = '' }) {
   )
 }
 
-export default Keywords
+export default KeywordsComp

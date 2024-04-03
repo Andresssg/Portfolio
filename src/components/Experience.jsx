@@ -1,5 +1,5 @@
 import useDiffDates from '../hooks/useDiffDates'
-import Keywords from './Keywords'
+import KeywordsComp from './KeywordsComp'
 
 function Experience ({ experience, position = 'left' }) {
   const { title, company, description, start, end } = experience
@@ -33,7 +33,7 @@ function Experience ({ experience, position = 'left' }) {
               <p>{endLocaleDate}</p>
             </div>
             <p className='text-lg lg:text-xl'>{amountMonths} meses</p>
-            <Keywords description={description} />
+            <KeywordsComp className='font-normal text-lg md:text-xl' description={description} />
           </div>
         </article>
       </div>
