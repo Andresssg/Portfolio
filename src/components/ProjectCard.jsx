@@ -1,4 +1,5 @@
 import useIcon from '../hooks/useIcon'
+import KeywordsComp from './KeywordsComp'
 import LinkButton from './LinkButton'
 
 function ProjectCard ({ info }) {
@@ -50,7 +51,7 @@ function ProjectCard ({ info }) {
               )
             })}
           </section>
-          <p className='md:w-[40ch]'>{description}</p>
+          <KeywordsComp className='font-normal text-lg lg:text-xl md:w-[40ch]' description={description} />
           {renderRepoButton && <LinkButton url={repoUrl} text='Ir al repositorio' showArrow />}
         </main>
       </a>
