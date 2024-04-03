@@ -20,17 +20,17 @@ function ProjectCard ({ info }) {
       title={redirectInfo.title}
     >
       <a
-        href={redirectInfo.href} className='project-card flex flex-col relative gap-y-2 p-4 w-full justify-center rounded-xl
-        overflow-hidden cursor-pointer md:w-[40ch] lg:w-[50ch] shadow-lg border-4 border-secondary group'
+        href={redirectInfo.href} className='project-card flex flex-col relative gap-y-2 p-4 w-fit justify-center rounded-xl
+        overflow-hidden cursor-pointer shadow-lg border-4 border-secondary group text-lg md:text-xl'
         rel='noreferrer noopener' target={redirectInfo.target}
       >
         <header className='flex flex-col w-full justify-between gap-y-2 z-10'>
           <img
             src={mainImage} alt={`Imagen del proyecto ${name}`}
             loading='lazy'
-            className='object-cover h-48 w-full rounded-lg aspect-video'
+            className='object-cover h-60 w-full rounded-lg aspect-video'
           />
-          <h3 className='font-bold text-2xl flex-grow'>{name}</h3>
+          <h3 className='font-bold text-3xl flex-grow'>{name}</h3>
         </header>
         <main className='flex flex-col h-fit w-full gap-y-2 justify-between z-10'>
           <section className='flex flex-wrap w-full'>
@@ -50,7 +50,7 @@ function ProjectCard ({ info }) {
               )
             })}
           </section>
-          <p>{description}</p>
+          <p className='md:w-[40ch]'>{description}</p>
           {renderRepoButton && <LinkButton url={repoUrl} text='Ir al repositorio' showArrow />}
         </main>
       </a>
