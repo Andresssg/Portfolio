@@ -4,7 +4,7 @@ import data from '../data/projects-info.json'
 function Projects () {
   return (
     <section
-      id='background' className='flex flex-col px-4 my-5 pt-10 justify-center items-center text-light-gray
+      id='projects' className='flex flex-col px-4 my-5 pt-10 justify-center items-center text-light-gray
   lg:my-20 lg:max-w-7xl'
     >
       <h1 className='py-5 font-bold text-4xl md:text-5xl text-accent text-center'>Proyectos</h1>
