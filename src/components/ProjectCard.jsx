@@ -18,7 +18,7 @@ function ProjectCard ({ info }) {
 
   return (
     <article className='p-3
-    rounded-lg bg-secondary md:w-[50ch]'
+    rounded-lg bg-secondary md:w-[50ch] hover:scale-105 hover:shadow-md hover:shadow-secondary duration-200'
     >
       <header className='flex flex-col font-bold text-xl md:text-2xl gap-y-4'>
         <a
