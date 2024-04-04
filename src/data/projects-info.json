@@ -6,8 +6,8 @@
         "urls": {
             "repoUrl": "https://github.com/Andresssg/Tesis"
         },
-        "mainImage": "/public/cesp.webp",
-        "images": ["/public/cesp.webp"],
+        "mainImage": "cesp.webp",
+        "images": ["cesp.webp"],
         "techStack": [
             "django",
             "react",
@@ -24,8 +24,8 @@
             "repoUrl": "https://github.com/Andresssg/Portfolio",
             "demoUrl": "https://andresssg.github.io/Portfolio/"
         },
-        "mainImage": "/public/portfolio.webp",
-        "images": ["/public/portfolio.webp"],
+        "mainImage": "portfolio.webp",
+        "images": ["portfolio.webp"],
         "techStack": [
             "react",
             "html",
