@@ -54,7 +54,7 @@ function ProjectCard ({ info }) {
         <KeywordsComp description={description} className='h-32' />
       </main>
       <footer>
-        {renderRepoButton && <LinkButton redirectInfo={{ href: repoUrl, title: 'Ir al repositorio', target: '_blank' }} />}
+        {renderRepoButton && <LinkButton url={repoUrl} text='Ir al repositorio' showArrow />}
       </footer>
     </article>
   )
