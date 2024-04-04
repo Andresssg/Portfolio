@@ -23,8 +23,8 @@
         "urls": {
             "repoUrl": "https://github.com/Andresssg/Portfolio"
         },
-        "mainImage": "/src/assets/cesp.webp",
-        "images": ["/src/assets/cesp.webp"],
+        "mainImage": "/src/assets/portfolio.webp",
+        "images": ["/src/assets/portfolio.webp"],
         "techStack": [
             "django",
             "react",
