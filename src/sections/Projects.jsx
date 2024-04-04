@@ -5,10 +5,11 @@ function Projects () {
   return (
     <section
       id='projects' className='flex flex-col px-4 my-5 justify-center items-center text-light-gray
-      md:my-16 lg:max-w-7xl'
+      md:my-16 w-full'
+
     >
       <h1 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Proyectos</h1>
-      <div className='flex flex-col md:flex-row md:flex-wrap w-full items-center justify-around gap-y-8'>
+      <div className='flex flex-col w-full md:flex-row md:flex-wrap justify-around items-center gap-y-8'>
         {data.map(project => {
           return (
             <ProjectCard key={`p-${project.id}`} info={project} />

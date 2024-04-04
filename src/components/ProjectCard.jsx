@@ -17,44 +17,45 @@ function ProjectCard ({ info }) {
   }
 
   return (
-    <article
-      title={redirectInfo.title}
+    <article className='p-3
+    rounded-lg bg-secondary md:w-[50ch]'
     >
-      <a
-        href={redirectInfo.href} className='project-card flex flex-col relative gap-y-2 p-4 w-fit justify-center rounded-xl
-        overflow-hidden cursor-pointer shadow-lg border-4 border-secondary group text-lg md:text-xl'
-        rel='noreferrer noopener' target={redirectInfo.target}
-      >
-        <header className='flex flex-col w-full justify-between gap-y-2 z-10'>
+      <header className='flex flex-col font-bold text-xl md:text-2xl gap-y-4'>
+        <a
+          href={redirectInfo.href} target={redirectInfo.target}
+          title={redirectInfo.title} rel='noreferrer'
+        >
           <img
-            src={mainImage} alt={`Imagen del proyecto ${name}`}
-            loading='lazy'
-            className='object-cover h-60 w-full rounded-lg aspect-video'
+            src={mainImage}
+            alt={name}
+            className='w-full h-60 object-cover rounded-lg'
           />
-          <h3 className='font-bold text-3xl flex-grow'>{name}</h3>
-        </header>
-        <main className='flex flex-col h-fit w-full gap-y-2 justify-between z-10'>
-          <section className='flex flex-wrap w-full'>
-            {techStack.map(tech => {
-              const { Icon } = useIcon(tech)
-              return (
-                Icon &&
-                  <span
-                    key={`pc-${tech}`}
-                    title={tech} className='-mr-5 p-1.5 bg-primary rounded-full border-2 border-secondary
+        </a>
+        <h3>{name}</h3>
+      </header>
+      <main>
+        <section className='flex flex-wrap w-full'>
+          {techStack.map(tech => {
+            const { Icon } = useIcon(tech)
+            return (
+              Icon &&
+                <span
+                  key={`pc-${tech}`}
+                  title={tech} className='-mr-5 p-1.5 bg-primary rounded-full border-2 border-secondary
                   hover:scale-110 hover:mr-0 hover:shadow-custom duration-200 hover:border-accent'
-                  >
-                    <Icon
-                      className='w-6 h-6'
-                    />
-                  </span>
-              )
-            })}
-          </section>
-          <KeywordsComp className='font-normal text-lg lg:text-xl md:w-[40ch]' description={description} />
-          {renderRepoButton && <LinkButton url={repoUrl} text='Ir al repositorio' showArrow />}
-        </main>
-      </a>
+                >
+                  <Icon
+                    className='w-6 h-6'
+                  />
+                </span>
+            )
+          })}
+        </section>
+        <KeywordsComp description={description} className='h-32' />
+      </main>
+      <footer>
+        {renderRepoButton && <LinkButton redirectInfo={{ href: repoUrl, title: 'Ir al repositorio', target: '_blank' }} />}
+      </footer>
     </article>
   )
 }
