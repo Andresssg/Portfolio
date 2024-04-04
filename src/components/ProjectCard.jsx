@@ -1,9 +1,11 @@
 import useIcon from '../hooks/useIcon'
+import useImage from '../hooks/useImage'
 import KeywordsComp from './KeywordsComp'
 import LinkButton from './LinkButton'
 
 function ProjectCard ({ info }) {
   const { name, description, mainImage, techStack, urls } = info
+  const img = useImage(mainImage)
   const { demoUrl, repoUrl } = urls
   let redirectInfo = {}
   let renderRepoButton = false
@@ -26,7 +28,7 @@ function ProjectCard ({ info }) {
           title={redirectInfo.title} rel='noreferrer'
         >
           <img
-            src={mainImage}
+            src={img}
             alt={name}
             className='w-full h-60 object-cover rounded-lg'
           />
