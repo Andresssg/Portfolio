@@ -4,6 +4,8 @@ import Node from './Node'
 import Nginx from './Nginx'
 import MySql from './MySql'
 import Docker from './Docker'
+import Html from './Html'
+import Tailwind from './Tailwind'
 
 const ICONS = {
   django: {
@@ -29,6 +31,14 @@ const ICONS = {
   docker: {
     component: Docker,
     url: 'https://www.docker.com/'
+  },
+  tailwind: {
+    component: Tailwind,
+    url: 'https://tailwindcss.com/'
+  },
+  html: {
+    component: Html,
+    url: 'https://developer.mozilla.org/es/docs/Web/HTML'
   }
 }
 
