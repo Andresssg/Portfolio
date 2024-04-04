@@ -26,11 +26,9 @@
         "mainImage": "/src/assets/portfolio.webp",
         "images": ["/src/assets/portfolio.webp"],
         "techStack": [
-            "django",
             "react",
-            "mysql",
-            "nginx",
-            "docker"
+            "html",
+            "tailwind"
         ]
     }
 ]
