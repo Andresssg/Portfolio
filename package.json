@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "http://andresssg.github.io/Portfolio/",
+  "homepage": "https://andresssg.github.io/Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
