@@ -8,7 +8,7 @@ function Projects () {
       md:my-16 w-full'
 
     >
-      <h1 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Proyectos</h1>
+      <h2 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Proyectos</h2>
       <div className='flex flex-col w-full md:flex-row md:flex-wrap justify-evenly items-center gap-y-8'>
         {data.map(project => {
           return (

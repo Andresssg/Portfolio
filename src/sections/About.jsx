@@ -12,7 +12,7 @@ function About () {
       id='about' className='flex flex-col px-4 my-5 justify-center items-center text-light-gray
       md:my-16 lg:max-w-7xl text-xl'
     >
-      <h1 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Sobre mi</h1>
+      <h2 className='py-20 font-bold text-4xl md:text-5xl text-accent text-center'>Sobre mi</h2>
       <div className='flex flex-col gap-y-4 md:w-[60ch]'>
         <p>Hola, tengo {age} y soy de <ColombianFlag className='w-5 h-auto inline-block' />. Soy una persona que le gusta y disfruta aprender cosas relacionadas a la tecnología. Desde muy pequeño me ha interesado la <strong className='text-accent'>programación</strong> es por eso que inicie aprendiendo a crear videojuegos en Unity.</p>
         <p>Creo que gran un porcentaje de niños suelen dejar algunos gustos de lado y yo hice parte de ese porcentaje. Comencé con nuevos gustos como el fútbol, videojuegos, series/YouTube, entre otros y me alejé de la programación.</p>
