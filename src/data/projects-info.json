@@ -6,8 +6,8 @@
         "urls": {
             "repoUrl": "https://github.com/Andresssg/Tesis"
         },
-        "mainImage": "/src/assets/cesp.webp",
-        "images": ["/src/assets/cesp.webp"],
+        "mainImage": "/public/cesp.webp",
+        "images": ["/public/cesp.webp"],
         "techStack": [
             "django",
             "react",
@@ -21,10 +21,11 @@
         "name": "Portafolio",
         "description": "Aplicación web para mostrar mis proyectos y habilidades. Este proyecto nace de la necesidad de tener un lugar donde mostrar mis proyectos y habilidades de una forma más visual y atractiva. Además de practicar mis habilidades de desarrollo web.",
         "urls": {
-            "repoUrl": "https://github.com/Andresssg/Portfolio"
+            "repoUrl": "https://github.com/Andresssg/Portfolio",
+            "demoUrl": "https://andresssg.github.io/Portfolio/"
         },
-        "mainImage": "/src/assets/portfolio.webp",
-        "images": ["/src/assets/portfolio.webp"],
+        "mainImage": "/public/portfolio.webp",
+        "images": ["/public/portfolio.webp"],
         "techStack": [
             "react",
             "html",
