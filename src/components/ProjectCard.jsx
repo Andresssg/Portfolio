@@ -19,7 +19,7 @@ function ProjectCard ({ info }) {
   }
 
   return (
-    <article className='p-3
+    <article className='flex flex-col gap-y-3 p-3
     rounded-lg bg-secondary md:w-[50ch] hover:scale-105 hover:shadow-md hover:shadow-secondary duration-200'
     >
       <header className='flex flex-col font-bold text-xl md:text-2xl gap-y-4'>
@@ -53,9 +53,9 @@ function ProjectCard ({ info }) {
             )
           })}
         </section>
-        <KeywordsComp description={description} className='h-32' />
+        <KeywordsComp description={description} className='min-h-32' />
       </main>
-      <footer>
+      <footer className='min-h-10'>
         {renderRepoButton && <LinkButton url={repoUrl} text='Ir al repositorio' showArrow />}
       </footer>
     </article>
