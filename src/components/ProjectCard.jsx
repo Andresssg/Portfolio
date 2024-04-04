@@ -32,7 +32,8 @@ function ProjectCard ({ info }) {
           <img
             src={img}
             alt={`Imagen del proyecto llamado ${name}`}
-            className='w-full h-60 object-cover rounded-lg'
+            className='w-full h-60 object-cover rounded-lg aspect-square'
+            loading='lazy'
           />
         </a>
         <h3>{name}</h3>
