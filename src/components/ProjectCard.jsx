@@ -19,8 +19,10 @@ function ProjectCard ({ info }) {
   }
 
   return (
-    <article className='flex flex-col gap-y-3 p-3
+    <article
+      className='flex flex-col gap-y-3 p-3
     rounded-lg bg-secondary md:w-[50ch] hover:scale-105 hover:shadow-md hover:shadow-secondary duration-200'
+      aria-label={`Tarjeta del proyecto ${name}`}
     >
       <header className='flex flex-col font-bold text-xl md:text-2xl gap-y-4'>
         <a
@@ -29,7 +31,7 @@ function ProjectCard ({ info }) {
         >
           <img
             src={img}
-            alt={name}
+            alt={`Imagen del proyecto llamado ${name}`}
             className='w-full h-60 object-cover rounded-lg'
           />
         </a>
