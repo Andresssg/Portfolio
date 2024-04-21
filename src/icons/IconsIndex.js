@@ -6,6 +6,8 @@ import MySql from './MySql'
 import Docker from './Docker'
 import Html from './Html'
 import Tailwind from './Tailwind'
+import SpringBoot from './SpringBoot'
+import PostgreSQL from './PostgreSQL'
 
 const ICONS = {
   django: {
@@ -39,6 +41,14 @@ const ICONS = {
   html: {
     component: Html,
     url: 'https://developer.mozilla.org/es/docs/Web/HTML'
+  },
+  springboot: {
+    component: SpringBoot,
+    url: 'https://spring.io/'
+  },
+  postgresql: {
+    component: PostgreSQL,
+    url: 'https://www.postgresql.org/'
   }
 }
 
