@@ -28,7 +28,8 @@ export default {
       },
       animation: {
         typewriter: 'typewriter 2s steps(20) forwards',
-        caret: 'typewriter 2s steps(20) forwards, blink 1s steps(11) infinite 2s'
+        caret: 'typewriter 2s steps(20) forwards, blink 1s steps(11) infinite 2s',
+        'pulse-slow': 'pulse 1s linear infinite'
       },
       boxShadow: {
         custom: '0px 10px 10px -10px rgba(0, 0, 0, 0.17)'

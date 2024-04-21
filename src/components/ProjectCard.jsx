@@ -4,7 +4,7 @@ import KeywordsComp from './KeywordsComp'
 import LinkButton from './LinkButton'
 
 function ProjectCard ({ info }) {
-  const { name, description, mainImage, techStack, urls } = info
+  const { name, description, mainImage, techStack, urls, status } = info
   const img = useImage(mainImage)
   const { demoUrl, repoUrl } = urls
   let redirectInfo = {}
@@ -20,8 +20,9 @@ function ProjectCard ({ info }) {
 
   return (
     <article
-      className='flex flex-col gap-y-3 p-3
-    rounded-lg bg-secondary md:w-[50ch] hover:scale-105 hover:shadow-md hover:shadow-secondary duration-200'
+      className={`flex flex-col gap-y-3 p-3 
+      ${status === 'wip' && 'wip'}
+    rounded-lg bg-secondary md:w-[50ch] hover:scale-105 hover:shadow-md hover:shadow-secondary duration-200`}
       aria-label={`Tarjeta del proyecto ${name}`}
     >
       <header className='flex flex-col font-bold text-xl md:text-2xl gap-y-4'>
