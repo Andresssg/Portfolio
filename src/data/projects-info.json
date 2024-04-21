@@ -31,5 +31,20 @@
             "html",
             "tailwind"
         ]
+    },
+    {
+        "id": 3,
+        "name": "Reach it - Backend",
+        "description": "Es una aplicación web de crowdfunding que permite a los usuarios publicar proyectos y apoyarlos económicamente. Este proyecto surge de una materia en la universidad realizado con JavaEE pero esta vez realizado con Spring Boot.",
+        "urls": {
+            "repoUrl": "https://github.com/Andresssg/Portfolio",
+            "demoUrl": "https://andresssg.github.io/Portfolio/"
+        },
+        "mainImage": "reach-it.webp",
+        "images": ["reach-it.webp"],
+        "techStack": [
+            "springboot",
+            "postgresql"
+        ]
     }
 ]
