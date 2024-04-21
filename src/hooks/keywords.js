@@ -5,5 +5,6 @@ export const keywords = [
   'PostgreSQL', 'MongoDB', 'NodeJS',
   'React', 'SCRUM', 'APIs',
   'IA', 'Inteligencia Artificial', 'Aplicación web',
-  'aplicación web', 'desarrollo web', 'Desarrollo web'
+  'aplicación web', 'desarrollo web', 'Desarrollo web',
+  'JavaEE'
 ]
