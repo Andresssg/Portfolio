@@ -1,9 +1,10 @@
 ---
 import HeaderIcons from "../components/HeaderIcons.astro";
+const { id } = Astro.props;
 ---
 
 <section
-  id="about"
+  id={id}
   class="flex flex-col h-screen p-10 justify-end tracking-tighter text-white"
 >
   <h2 class="text-7xl font-bold text-secondary">Andres Guevara</h2>
