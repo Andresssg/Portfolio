@@ -1,7 +1,16 @@
 ---
-const { id, class: classList } = Astro.props;
+interface Props {
+  id: string;
+  class: string;
+  sectionTitle: string;
+}
+
+const { id, class: classList, sectionTitle } = Astro.props;
 ---
 
 <section id={id} class={classList}>
+  <h2 class="text-secondary tracking-tighter text-5xl font-bold">
+    {sectionTitle}
+  </h2>
   <slot />
 </section>
