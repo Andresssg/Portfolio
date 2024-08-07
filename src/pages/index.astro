@@ -2,14 +2,22 @@
 import SectionWrapper from "../components/SectionWrapper.astro";
 import Layout from "../layouts/Layout.astro";
 import About from "../sections/About.astro";
+import Background from "../sections/Background.astro";
 import Header from "../sections/Header.astro";
 ---
 
 <Layout title="Portafolio Andres Guevara">
 	<Header />
 	<SectionWrapper
+		id="background"
+		class="flex flex-col justify-center items-center mx-auto gap-y-10 h-screen lg:max-w-4xl px-8"
+		sectionTitle="Experiencia"
+	>
+		<Background />
+	</SectionWrapper>
+	<SectionWrapper
 		id="about"
-		class="flex flex-col justify-center items-center mx-auto gap-y-10 h-screen lg:max-w-7xl"
+		class="flex flex-col justify-center items-center mx-auto gap-y-10 h-screen lg:max-w-4xl px-8"
 		sectionTitle="Sobre mi"
 	>
 		<About />
