@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 import SectionWrapper from "../components/SectionWrapper.astro";
 import Layout from "../layouts/Layout.astro";
 import About from "../sections/About.astro";
@@ -12,6 +14,7 @@ import Projects from "../sections/Projects.astro";
 	description="Soy Andres Guevara, un desarrollador web junior apasionado por aprender y crear soluciones web modernas. Explora mi portafolio para ver mis proyectos y experiencia. Estoy buscando oportunidades para aprender, crecer y contribuir en el mundo del desarrollo web."
 	keywords="desarrollador web junior, Spring Boot, Java, MySQL, Postgres, MongoDB, React, desarrollo web, programación, backend, frontend, aplicaciones web, portafolio, junior developer, full stack"
 >
+	<SpeedInsights />
 	<Header />
 	<SectionWrapper
 		id="background"
