@@ -36,7 +36,7 @@ md:flex-row relative bg-primary rounded-lg group"
     <h3 class="font-bold text-2xl text-secondary">{title}</h3>
     <ul class="flex flex-wrap gap-1">
       {
-        technologies.map((technology) => {
+        technologies.map((technology: any) => {
           return (
             <li
               class={`${technology.class} flex px-2 py-1 rounded-full text-sm items-center justify-between gap-x-1`}
