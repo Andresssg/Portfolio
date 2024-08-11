@@ -1,0 +1,100 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import React from "../icons/React.astro";
+import Tailwind from "../icons/Tailwind.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+import Django from "../icons/Django.astro";
+import Spring from "../icons/Spring.astro";
+import Docker from "../icons/Docker.astro";
+import PostgreSQL from "../icons/PostgreSQL.astro";
+import MySQL from "../icons/MySQL.astro";
+import Nginx from "../icons/Nginx.astro";
+
+const TECHNOLOGIES = {
+  REACT: {
+    name: "React",
+    class: "bg-[#003159]",
+    icon: React,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159]",
+    icon: Tailwind,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-orange-900/90",
+    icon: AstroIcon,
+  },
+  DJANGO: {
+    name: "Django",
+    class: "bg-green-900/60",
+    icon: Django,
+  },
+  SPRING: {
+    name: "Spring",
+    class: "bg-green-900/60",
+    icon: Spring,
+  },
+  DOCKER: {
+    name: "Docker",
+    class: "bg-[#003159]",
+    icon: Docker,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#003159]",
+    icon: PostgreSQL,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#003159]",
+    icon: MySQL,
+  },
+  NGINX: {
+    name: "Nginx",
+    class: "bg-green-900/60",
+    icon: Nginx,
+  },
+};
+
+const projects = [
+  {
+    title: "CESP - Conteo de entrada y salida de personas",
+    description:
+      "Aplicación web para subir un video y contar con Inteligencia Artificial la cantidad de personas que entran y salen de los parques de Bogotá. Proyecto de grado",
+    image: "/cesp.webp",
+    preview: "",
+    github: "https://github.com/Andresssg/Tesis",
+    technologies: [
+      TECHNOLOGIES.DJANGO,
+      TECHNOLOGIES.REACT,
+      TECHNOLOGIES.MYSQL,
+      TECHNOLOGIES.NGINX,
+      TECHNOLOGIES.DOCKER,
+    ],
+  },
+  {
+    title: "Portafolio",
+    description:
+      "Portafolio personal para mostrar los proyectos realizados y experiencial laboral.",
+    image: "/portfolio.webp",
+    preview: "",
+    github: "https://github.com/Andresssg/portfolio",
+    technologies: [TECHNOLOGIES.ASTRO, TECHNOLOGIES.TAILWIND],
+  },
+  {
+    title: "Reach it - Backend rest api",
+    description:
+      "Es una api REST de una aplicación de crowdfunding, donde los usuarios pueden crear proyectos y los demás usuarios pueden aportar dinero a los proyectos.",
+    image: "/reach-it.webp",
+    preview: "",
+    github: "https://github.com/Andresssg/reach-it-backend",
+    technologies: [TECHNOLOGIES.SPRING, TECHNOLOGIES.POSTGRESQL],
+  },
+];
+---
+
+<section class="flex flex-col p-4 gap-4 gap-y-10 w-full">
+  {projects.map((project) => <ProjectCard {...project} />)}
+</section>
