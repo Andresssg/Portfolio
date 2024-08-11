@@ -1,0 +1,10 @@
+---
+const { href, icon: Icon, class: customClass } = Astro.props;
+const defaultClass =
+  "h-auto mt-4 hover:scale-110 hover:cursor-pointer hover:text-secondary transition";
+const combinedClass = `${defaultClass} ${customClass || ""}`;
+---
+
+<a href={href ? href : "#"} target="_blank" rel="noopener noreferrer">
+  <Icon class={combinedClass} />
+</a>

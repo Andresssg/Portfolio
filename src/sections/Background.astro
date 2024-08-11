@@ -1,0 +1,49 @@
+---
+import BackgroundCard from "../components/BackgroundCard.astro";
+
+const backgroundList = [
+  {
+    company: "Unidad de restitución de tierras",
+    title: "Desarrollador Junior Fullstack",
+    initialDate: "Abril 2024",
+    description:
+      "Desarrollo y mantenimiento de aplicaciones web internas de la entidad. Uso de tecnologías como Java, Spring Boot, Angular, entre otras. Participación en el ciclo de desarrollo, mediante SCRUM.",
+  },
+  {
+    company: "Unidad de restitución de tierras",
+    title: "Practicante desarrollo de software",
+    initialDate: "Agosto 2023",
+    finalDate: "Diciembre 2023",
+    description:
+      "Desarrollo de componentes de software bajo estándares de la entidad. Contribución al crecimiento de las aplicaciones internas usadas por los empleados desarrollando diversas funcionalidades en algunas de las aplicaciones logrando su mantenimiento y actualización. Participación en el ciclo de desarrollo, mediante SCRUM. Se usaron tecnologías como Java, Spring Boot, Angular, entre otras.",
+  },
+  {
+    company: "Freelance - Desarrollo de software",
+    title: "Desarrollador freelance",
+    initialDate: "Enero 2023",
+    finalDate: "Mayo 2023",
+    description:
+      "Desarrollo de una aplicación web para realizar cotizaciones y mejorar el servicio al cliente. Consumo de diferentes servicios de un CRM para consultar y guardar información de los clientes. Se usaron tecnologías como NodeJS, React, entre otras. También se crearon diversas APIs para la comunicación con el CRM y la aplicación web.",
+  },
+];
+---
+
+<ol>
+  {
+    backgroundList.map((background) => {
+      const { company, title, initialDate, finalDate, description } =
+        background;
+      return (
+        <li>
+          <BackgroundCard
+            company={company}
+            title={title}
+            initialDate={initialDate}
+            finalDate={finalDate}
+            description={description}
+          />
+        </li>
+      );
+    })
+  }
+</ol>

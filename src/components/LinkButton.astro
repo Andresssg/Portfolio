@@ -1,0 +1,14 @@
+---
+const { link, text } = Astro.props;
+---
+
+<a
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex py-2 px-5 items-center gap-x-2 rounded-full font-semibold
+  bg-white/5 hover:scale-110 duration-500"
+>
+  <slot name="icon" />
+  {text}
+</a>

@@ -1,0 +1,20 @@
+---
+import HeaderIcon from "./HeaderIcon.astro";
+import GitHub from "../icons/GitHub.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Mail from "../icons/Mail.astro";
+---
+
+<div class="flex gap-x-6 items-center">
+  <HeaderIcon href="https://github.com/Andresssg" icon={GitHub} class="w-10" />
+  <HeaderIcon
+    href="https://www.linkedin.com/in/guevaraandres/"
+    icon={LinkedIn}
+    class="w-10"
+  />
+  <HeaderIcon
+    href="mailto:guevaraandres.dev@gmail.com"
+    icon={Mail}
+    class="w-12"
+  />
+</div>

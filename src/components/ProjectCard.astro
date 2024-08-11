@@ -1,0 +1,113 @@
+---
+import GitHub from "../icons/GitHub.astro";
+import ExternalLink from "../icons/ExternalLink.astro";
+import LinkButon from "../components/LinkButton.astro";
+
+interface ProjectCard {
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+  preview: string;
+  github: string;
+  technologies: string[];
+}
+
+const { title, description, image, preview, alt, github, technologies } =
+  Astro.props;
+---
+
+<article
+  class="flex flex-col gap-x-8 px-2 py-4
+md:flex-row relative bg-primary rounded-lg group"
+>
+  <div
+    class="w-full md:w-1/2 h-56 rounded-lg overflow-hidden border border-secondary/20"
+  >
+    <img
+      class="size-full object-cover group-hover:object-left-top transition-all duration-1000"
+      loading="lazy"
+      src={image}
+      alt={alt}
+    />
+  </div>
+  <div class="flex flex-col w-full gap-y-4
+  md:w-1/2">
+    <h3 class="font-bold text-2xl text-secondary">{title}</h3>
+    <ul class="flex flex-wrap gap-1">
+      {
+        technologies.map((technology) => {
+          return (
+            <li
+              class={`${technology.class} flex px-2 py-1 rounded-full text-sm items-center justify-between gap-x-1`}
+            >
+              <technology.icon class="size-4 inline-block" />
+              <span>{technology.name}</span>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p class="text-gray-200">{description}</p>
+    <div class="flex gap-6">
+      {
+        github && (
+          <LinkButon link={github} text="Código">
+            <GitHub class="size-4" slot="icon" />
+          </LinkButon>
+        )
+      }
+      {
+        preview && (
+          <LinkButon link={preview} text="Demo">
+            <ExternalLink class="size-4" slot="icon" />
+          </LinkButon>
+        )
+      }
+    </div>
+  </div>
+</article>
+
+<style>
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  article:hover:before,
+  article:hover:after {
+    box-sizing: content-box;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    padding: 5px;
+    border-radius: 0.5rem;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(
+      from var(--angle),
+      transparent 50%,
+      #22d3ee
+    );
+    animation: rotate 3s linear infinite;
+  }
+
+  article:before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+
+  @keyframes rotate {
+    from {
+      --angle: 0deg;
+    }
+
+    to {
+      --angle: 360deg;
+    }
+  }
+</style>
