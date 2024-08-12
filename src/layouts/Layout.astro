@@ -17,6 +17,19 @@ const { title, description, keywords } = Astro.props;
 		<meta name="keywords" content={keywords} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="author" content="Andres Guevara" />
+		<meta
+			property="og:title"
+			content="Portafolio de Andres Guevara - Desarrollador Web"
+		/>
+		<meta
+			property="og:description"
+			content="Explora mi portafolio, proyectos y experiencia como desarrollador web junior. Busco oportunidades para aprender, crecer y contribuir en el mundo del desarrollo web."
+		/>
+		<meta
+			property="og:image"
+			content="https://andresssg-portfolio.vercel.app/portfolio.webp"
+		/>
+		<meta property="og:url" content="https://andresssg-portfolio.vercel.app/" />
 		<title>{title}</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	</head>
